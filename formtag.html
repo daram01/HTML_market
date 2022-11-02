@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formtag</title>
+</head>
+<body>
+    <!-- form : 작성하는 방식, 선택 방식 -->
+    <form method="" action="http://daum.net" name="member">
+        <fieldset> <!-- 묶고싶은 대상이 있을 때 사용한다.  -->
+            <legend>개인정보</legend> <!-- 필드 안의 제목을 사용하고 싶을 때 사용한다.  -->
+                <label for="id">아이디</label>
+                <input type="text" name="id" id="id" autofocus required placeholder="하이픈 생략"/> (*필수) <!-- required-> 강제성을 띈다. -->
+                <br><br>
+                <label for="password">비밀번호</label >
+                <input type="password" name="password" id="password" size="50" minlength="4" maxlength="10"> (*4~10글자 사이)
+        </fieldset>
+        <br>
+        <label for="time">상영시간</label>
+        <input type="text" name="time" id="time" value="오전 09:00 ~ 12:00" readonly> <!-- readonly -> 값을 수정하지 못 하게 하고, 보기만 허용 할 때 사용 -->
+        <br><br>
+        <!-- 라디오버튼 -->
+        <!-- 한 개만 선택 가능 -->
+        <!-- 네임 속성이 모두 동일해야 한다. -->
+        <fieldset>
+            <legend>사용언어</legend>
+                <input type="radio" name="subject" value="java" checked>JAVA <!-- checked -> 기본값으로 설정되어진다 -->
+                <input type="radio" name="subject" value="html">HTML
+                <input type="radio" name="subject" value="slq">SQL 
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>학년</legend>
+                <input type="radio" name="grade" value="1" checked>1학년
+                <input type="radio" name="grade" value="2">2학년
+                <input type="radio" name="grade" value="3">3학년
+        </fieldset>
+        <br>
+        <!-- 체크박스 -->
+        <!-- 0개 또는 여러개를 선택할 수 있게 해줌.  -->
+        <fieldset>
+            <legend>좋아하는 스포츠</legend>
+                <input type="checkbox" neme="habby" value="축구" checked>축구
+                <input type="checkbox" name="habby" value="야구">야구
+                <input type="checkbox" name="habby" value="농구">농구
+                <input type="checkbox" name="habby" value="배구">배구
+                <input type="checkbox" name="habby" value="선택없음">선택없음
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>상세정보</legend>
+                <label for="email">이메일</label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <label for="number">주문수량</label>
+                <input type="number" name="number" id="number">
+                <br><br>
+                <label for="color">색상</label>
+                <input type="color" name="color" id="color">
+        </fieldset>
+        <br>
+        <label for="start">시작일</label>
+        <input type="date" name="date" id="start">
+        <br><br>
+        <label for="end">종료일</label>
+        <input type="date" name="date" id="end">
+        <br><br>
+        <label for="start">예약시작일</label>
+        <input type="datetime-local" name="date" id="start">
+        <br><br>
+        <label for="end">예약종료일</label>
+        <input type="datetime-local" name="date" id="end">
+        <br><br>
+        <label for="job">직업선택</label>
+        <select name="job" size="4">
+            <option value="0">---선택---</option>
+            <option value="1">기자</option>
+            <option value="2" selected>개발자</option> <!-- selected -> 기본값으로 설정되어짐 -->
+            <option value="3">경호원</option>
+        </select>
+        <br><br>
+
+        <!-- 여러줄입력폼 -->
+        <label for="content">상품소개</label>
+        <textarea name="content" id="content" rows="10" cols="30" placeholder="내용을 입력하세요."></textarea>
+        <br><br>
+
+        <!-- 파일첨부 -->
+        <label for="fileup">첨부파일</label>
+        <input type="file" multiple> <!-- multiple 파일을 여러개 선택할 수 있게 해준다.  -->
+
+        <br><br>
+        
+        <!-- 버튼 -->
+        <input type="submit" value="회원가입"> <!--데이터 전송. 입력된 데이터를 가지고 액션에서 사용한 주소값으로 넘겨진다.  -->
+        <input type="reset" value="취소"> <!-- 데이터 전체 취소 -->
+        <input type="button" value="메시지 실행" onclick="alert('메시지 보여주기')"> <!-- 내가 정의한 역할을 수행하는 버튼 -->
+        <button type="button" onclick="alert('메시지 보여주기')">메시지 실행2</button>
+        <!-- button 타입에 쓸 수 있는 종류 -> submit, reset ... -->
+
+    </form>
+</body>
+</html>

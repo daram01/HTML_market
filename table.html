@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <!-- table tag --> 
+    <!-- 게시판 만들 때 사용이 많이 된다 -->
+    <!-- 단위 : px(기본값), % -->
+    <figure>
+        <figcaption> <!-- caption과 동일하긴 하나, 왼쪽 정렬임 -->
+            <p> 국내 총 생산량 </p>
+        </figcaption>
+        <table border="1" height="100%" width="100%">
+            <caption> <!-- 제목 -->
+                <strong> 제목 </strong>
+            </caption>
+            <tr> <!-- 행1 -->
+                <td>1</td><td>2</td><td>3</td><td>4</td><!-- 열1 -->
+            </tr>
+            <tr> <!-- 행2 -->
+                <td>5</td><td>6</td><td>7</td><td>8</td><!-- 열2 -->
+            </tr>
+            <tr> <!-- 행3 -->
+                <td>9</td><td>10</td><td>11</td><td>12</td><!-- 열3 -->
+            </tr>
+            <tr> <!-- 행4 -->
+                <td>13</td><td>14</td><td>15</td><td>16</td><!-- 열4 -->
+            </tr>
+        </table>
+    </figure>
+
+
+    <table border="1" height="350px" width="350px">
+        <caption>
+            테이블을 병합하게 될 경우,<br> 뒤의 데이터는 삭제된다. 
+        </caption>
+        <tr> <!-- 행1 -->
+            <td rowspan="2">1</td><td colspan="2">2</td><!-- 열1 -->
+            <!-- rowspan, colspan 뒤의 숫자는 합쳐지는 셀의 갯수임.  -->
+        </tr>
+        <tr> <!-- 행2 -->
+            <td>5</td><td>6</td><!-- 열2 -->
+        </tr>
+    </table>
+    <br><br>
+
+
+    <!-- thead, tbody, tfoot 논리태그 -->
+    <table border="1" height="350" width="350">
+        <thead>
+            <tr>
+                <td>1</td><td>2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3</td><td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>5</td><td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

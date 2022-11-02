@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        /* 글꼴 */
+        /* .fontstyle {font-family: 휴먼편지체,돋움;} */
+
+        /* 웹폰트 */
+        /* <!-- https://fonts.google.com/ --> */
+        @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;700&display=swap');
+        .fontstyle {font-family: 'Gaegu', cursive;}
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Gaegu:wght@300;700&display=swap');
+        .fontstyle2 {font-family: 'Black And White Picture', sans-serif;
+                        font-family: 'Gaegu', cursive;}
+
+
+        /* 글자 크기 */
+        /* 1. 절대크기 : px, pt
+        2. 상대크기 : em, % 예)1em = 100% */
+        /* p {font-size: 30px;} */
+        /* p {font-size: 2em;} */
+
+        /* 글자 굵기 */
+        /* p {font-weight: bold;} */
+
+        /* 글자 스타일 */
+        /* p {font-style: italic;}
+        p {font-size: 100px; 
+            font-family: 궁서;} */
+
+        /* p {color: rgb(25, 0, 255);}
+        p {text-decoration: underline ;} none, overline, line-through */
+
+        /* 글자에 그림자 효과 */
+        /* text-shadow : 가로 거리, 세로 거리, 번짐 정도, 그림자 색깔 */
+        .shadow1 {text-shadow: 1px 1px;
+                    color: rgb(0, 255, 0);}
+        .shadow2 {text-shadow: 3px 3px 3px yellow;}
+        .shadow3 {text-shadow: 5px 5px 10px violet;}
+
+        /* 글자 간격(자간) */
+        .letter {letter-spacing: 0.5em;}
+
+        /* 공백과 줄바꿈 속성
+        white-space : normal(기본값) | nowrap | pre | pre-wrap(공백인정, 줄바꿈 해줌) | pre-line(공백인정x, 줄바꿈은 해줌)
+        .normal {white-space: normal;}
+        .nowrap {white-space: nowrap;}
+        .pre {white-space: pre;}
+        .pre-wrap {white-space: pre-wrap;}
+        .pre-line {white-space: pre-line;}
+
+        p {
+            width: 150px;
+            background-color: darkgray;
+        } */
+
+
+        /* 텍스트 정렬 : 수평정렬
+        text-align : left | rigth | center(가운데정렬) | justify(양쪽정렬)
+
+        p {
+            border : 1px solid red;   
+        }
+
+        .left {text-align: left;}
+        .right {text-align: right;}
+        .center {text-align: center;}
+        .justify {text-align: justify;} */
+
+        /* 줄(행) 간격 */
+        /* .line {line-height: 2em;}
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(201, 159, 240);
+            text-align: center;
+            line-height: 200px;
+        } */
+
+        /* 글자가 넘치는 기능 제어 overflow */
+
+        p{
+            border : 1px solid red;
+            width : 300px;
+
+            /* 밑의 세가지 속성은 함께 사용되어야 한다. */
+            white-space: nowrap;
+            overflow : hidden; /* 오버플로우된것을 가려준다 */
+            text-overflow: ellipsis; /* 생략표시 */
+        }
+
+        p:hover{ /* 마우스를 갖다대면 숨겨진 부분들이 보여진다 */
+            overflow: visible; 
+        }
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- CSS의 속성 -->
+
+    <p>타임지에서 선정한 10대 슈퍼 푸드 ‘귀리’는 다른 곡류에 비해 단백질, 
+        필수아미노산, 수용성 섬유질이 풍부한 식품으로, 밥에 넣어 먹거나 귀리의 가공품인 오트밀로 많이 이용된다.</p>
+
+    <!-- <p>
+        During a meeting with the police and Yongsan District office last Wednesday, 
+        three days before the deadly crowd crush in Itaewon, 
+        a group of business owners reportedly demanded safety measures against overcrowding 
+        and fatal crowd crushes. At the same time, the situation room of 112 at Yongsan Police 
+        Station drew up a warning report on the risk of accidents in Itaewon. The report from the 
+        intelligence division at Yongsan Police Station also reveals concerns about safety accidents, 
+        which was shared on the police intranet. But such warnings were practically ignored by the police and the local government.
+    </p>
+    <p class="line">
+        During a meeting with the police and Yongsan District office last Wednesday, 
+        three days before the deadly crowd crush in Itaewon, 
+        a group of business owners reportedly demanded safety measures against overcrowding 
+        and fatal crowd crushes. At the same time, the situation room of 112 at Yongsan Police 
+        Station drew up a warning report on the risk of accidents in Itaewon. The report from the 
+        intelligence division at Yongsan Police Station also reveals concerns about safety accidents, 
+        which was shared on the police intranet. But such warnings were practically ignored by the police and the local government.
+    </p>
+    <p class="box">
+        가운데 정렬(수직)
+    </p> -->
+
+
+    <!-- <p class="left">Many would have been surprised by the alarm sounds screaming from 
+        their mobile phones at hours most Koreans were readying to hit the bed last Saturday 
+        (Korea sends alarm warnings for disasters). Breaking news on the phone read 50</p>
+    <p class="right">Many would have been surprised by the alarm sounds screaming from 
+        their mobile phones at hours most Koreans were readying to hit the bed last Saturday 
+        (Korea sends alarm warnings for disasters). Breaking news on the phone read 50</p>
+    <p class="center">Many would have been surprised by the alarm sounds screaming from 
+        their mobile phones at hours most Koreans were readying to hit the bed last Saturday 
+        (Korea sends alarm warnings for disasters). Breaking news on the phone read 50</p>
+    <p class="justify">Many would have been surprised by the alarm sounds screaming from 
+        their mobile phones at hours most Koreans were readying to hit the bed last Saturday 
+        (Korea sends alarm warnings for disasters). Breaking news on the phone read 50</p> -->
+
+
+
+    <!-- <p class="normal">요소의 공백문자 를 어 떻게처리할 지를 정의합니다. </p>
+    <p class="nowrap">요소의 공백문자 를 어 떻게처리할 지를 정의합니다. </p>
+    <p class="pre">요소               의 공백문자 를 어 떻게처리           할 지를 정의합니다. </p>
+    <p class="pre-wrap">요소          의 공백문자 를 어 떻게      처리할 지를 정의합니다. </p>
+    <p class="pre-line">요소      의 공백문자 를 어 떻게              처리할 지를 정의합니다. </p> -->
+
+    <!--
+    기본 글자 입니다.
+    <p>브라우저 기본 글꼴</p>
+    <p class="fontstyle">글꼴을 적용한 상태</p>
+    <h1 class="fontstyle2 shadow1">HTML5 그림자효과를 넣었습니다. </h1>
+    <h1 class="fontstyle2 shadow2">HTML5 그림자효과를 넣었습니다. </h1>
+    <h1 class="fontstyle2 shadow3 letter">HTML5 그림자효과를 넣었습니다. </h1> -->
+</body>
+</html>

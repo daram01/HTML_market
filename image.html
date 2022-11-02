@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+</head>
+<body>
+    <!-- 경로에는 두 가지 종류가 있음. 
+    1. 상대경로표시 : 내가 있는 위치가 기준이다. (상위를 표현하고 싶을 때는 ..를 붙여야한다.)
+    2. 절대경로표시 : C:\Users\user\Documents\(내가 쓰고 싶은 이미지 파일명.확장자) 
+    확장자 표시는 꼭 해주어야 함.-->
+
+
+    <h1>상대경로</h1>
+    <img src="dog.jpeg" heigth="200" width="200" alt="골든리트리버"/>
+    <h1>상대경로2</h1> <!-- 나를 기준으로 하위에 있을 때 표현방식 -->
+    <img src="imageand\dog3.jpeg" heigth="150" width="150" alt="리트리버" />
+    <h1>상대경로3</h1> <!-- 나를 기준으로 상위에 있을 때 표현방식 -->
+    <img src="..\dog.jpeg" heigth="300" width="300" alt="골든리트리버" />
+    <h1>절대경로</h1>
+    <img src="C:\Work\javascript\dog2.jpeg" heigth="400" width="400" alt="허스키" />
+    
+    <!-- url사용하기 -->
+    <h1>이미지태그경로</h1>
+    <img src="https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/landscape-photography/CODERED_B1_landscape_P2d_714x348.jpg.img.jpg" />
+
+    <br><br>
+    <!-- 하이퍼링크 걸기 -->
+    <!-- <a href="파일위치(상대경로,절대경로),url"> 화면에 나타나는 부분 </a> -->
+    <strong><a href="http://www.naver.com"> NAVER로 이동합니다. </a></strong>
+    <br><br>
+    <a href="second.html" > second.html로 이동합니다. </a>
+    <br><br>
+    <a href="second.html" target="_blank" > 새창띄우기 </a>
+    <br><br>
+    <!-- 이미지 넣어서 새창 띄우기 -->
+    <a href="http://www.naver.com"> <img src="imageand\naverr.png" /> </a>
+
+    <br><br>
+
+    <!-- 한 페이지 내에서 문서 이동 -->
+    <a href="#content1">도서정보</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#content2">한줄평</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#content3">반품/환불</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="content1">도서정보</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="content2">한줄평</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="content3">반품/환불</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="#top"><h1>맨위로</h1></a>
+
+
+
+</body>
+</html>

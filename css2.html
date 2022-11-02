@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자 { 속성 : 값 ; 속성 : 값 ; 속성: 값 ....} */
+
+        /* 전체 선택자 */
+        /* * {color: rgb(255, 0, 0);} */
+        
+        /* 태그 선택자 */
+        /* p { font-size: 50px; }
+        h1 { font-size: 70px; } */
+
+        /* 클래스 선택자 - 효과를 여러개 적용 가능*/
+        .bluetext {color: blue;}
+        .redtext {color: red;}
+        .textsize30 {font-size: 30px;}
+
+        /* 아이디 선택자 - 효과 하나만 적용 가능 */
+        #bluetext {color: blue;}
+        #textsize30 {font-size: 30px;}
+        #textsize50 {font-size: 50px;}
+
+        /* 그룹 선택자 */
+        /* h1,h2,span {color: green;} */
+
+        /* 선택자 우선 순위 - 작성 순서 상 마지막에 작성된 것이 적용된다. */
+        /* !important를 작성하면 우선 순위가 가장 첫번째가 된다. */
+        /* p {color: blue !important;}
+        p {color: red;} */
+
+        /* css의 상속 - 일부 속성은 상속에서 제외{border속성}*/
+        body {color: red;}
+        
+    </style>
+</head>
+<body>
+
+    기본 글자 입니다.
+    <!-- <p class="bluetext textsize30">첫번째 p태그입니다. </p>
+    <p class="redtext textsize30">두번째 p태그입니다. </p>
+
+    <p id="textsize30">세번째 p태그입니다. </p>
+    <p id="textsize50">네번째 p태그입니다. </p> -->
+
+    <p>다섯번째 p태그입니다. </p>
+
+    <h1>h1태그입니다. </h1>
+    <h2>h2태그입니다. </h2>
+    <span>sapn태그 입니다. </span>
+</body>
+</html>
