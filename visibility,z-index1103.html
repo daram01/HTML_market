@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 요소를 화면에 보이기/숨기기 속성
+        visibility : hidden | visible */
+        /* hidden : 요소의 영역은 그대로 보전함. */
+        /* display : none | block
+        none : 요소의 영역을 보존하지 않는다. */
+
+        /* .invisible{
+            visibility: hidden;
+            display: none;
+        } */
+
+
+        /* 요소의 순서를 변경해주는 속성
+        z-index: 값(상대적임)*/
+    
+        img{
+            position: absolute;
+        }
+        .img0{
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        .img1{
+            top: 30px;
+            left: 30px;
+            z-index: 11;
+        }
+        .img2{
+            top: 60px;
+            left: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <img class="img0" src="imageand/1.jpg">
+    <img class="img1" src="imageand/2.jpg">
+    <img class="img2" src="imageand/3.jpg">
+</body>
+</html>
